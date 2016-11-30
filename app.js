@@ -120,4 +120,6 @@ while (!response7Flag && numberOfAttempts < 6) {
   numberOfAttempts++;
 }
 
+alert('Hey ' + username +
+  ' you got ' + correctResponses + ' out of ' + numberOfQuestions + ' correct');
 console.log('Correct Responses: ' + correctResponses + ' out of ' + numberOfQuestions);
