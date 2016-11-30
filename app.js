@@ -4,7 +4,7 @@ var username = prompt('Whats up! What\'s your name?');
 alert('Hey ' + username + '\nHere\'s a quiz to learn more about me');
 
 var correctResponses = 0;
-var numberOfQuestions =  5;
+var numberOfQuestions =  7;
 
 var response1 = prompt('Does Remil have any cats?').toLowerCase();
 if (response1 === 'yes' || response1 === 'y') {
@@ -70,5 +70,64 @@ if (response5 === 'yes' || response5 === 'y') {
   alert('Try to answer with a yes/y or no/n next time');
   console.log('Question 5: incorrect; User Response: ' + response5);
 }
+
+var numberOfAttempts = 0;
+var correctNumber = 7;
+var response6;
+
+while (response6 != correctNumber && numberOfAttempts < 4) {
+  numberOfAttempts++;
+  response6 = parseInt(prompt('Guess my favorite number between 0-9?'));
+
+  if (response6 > correctNumber) {
+    alert('Too High!');
+  } else {
+    alert('Too Low!');
+  }
+
+  if (numberOfAttempts === 4) {
+    alert('You took too many guesses, good luck next time');
+  }
+}
+
+if (response6 === correctNumber) {
+  alert('Correct');
+  correctResponses++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 console.log('Correct Responses: ' + correctResponses + ' out of ' + numberOfQuestions);
