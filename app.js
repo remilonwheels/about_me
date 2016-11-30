@@ -81,8 +81,10 @@ while (response6 != correctNumber && numberOfAttempts < 4) {
 
   if (response6 > correctNumber) {
     alert('Too High!');
-  } else {
+    console.log('Question 6: incorrect; User Response: ' + response6);
+  } else if (response6 < correctNumber) {
     alert('Too Low!');
+    console.log('Question 6: incorrect; User Response: ' + response6);
   }
 
   if (numberOfAttempts === 4) {
@@ -92,42 +94,30 @@ while (response6 != correctNumber && numberOfAttempts < 4) {
 
 if (response6 === correctNumber) {
   alert('Correct');
+  console.log('Question 6: correct; User Response: ' + response6);
   correctResponses++;
 }
 
 
+var responseArray = ['va', 'virginia', 'ca', 'california'];
+var response7;
+var response7Flag = false;
+numberOfAttempts = 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+while (!response7Flag && numberOfAttempts < 6) {
+  response7 = prompt('Can you guess a state that I have lived in besides Washington?');
+  for (var i = 0; i < responseArray.length; i++) {
+    if (response7 === responseArray[i]) {
+      alert('Yes, you are correct!');
+      console.log('Question 7: correct, User Response: ' + response7);
+      response7Flag = true;
+      correctResponses++;
+    }
+  }
+  if(!response7Flag) {
+    alert('Sorry, please try again');
+  }
+  numberOfAttempts++;
+}
 
 console.log('Correct Responses: ' + correctResponses + ' out of ' + numberOfQuestions);
