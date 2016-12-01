@@ -1,7 +1,8 @@
 'use strict';
 
 var username = prompt('Whats up! What\'s your name?');
-alert('Hey ' + username + '\nHere\'s a quiz to learn more about me');
+alert('Hey ' + username + '\nHere\'s a quiz to learn more about me' +
+  '\nPlease answer with yes/y or no/n answers');
 
 var correctResponses = 0;
 var numberOfQuestions =  7;
