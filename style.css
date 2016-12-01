@@ -1,4 +1,22 @@
 * {
   outline: 1px dotted orange;
-  color: blue;
+  font-family: Source Sans Pro HB, Helvetica Neue ,Helvetica , Arial ,sans-serif, Microsoft Yahei;
+}
+
+header h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bio_section {
+}
+
+.bio_section_heading {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.bio_section_content {
+  margin-left: 20px;
+  margin-top: 0;
 }
