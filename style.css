@@ -1,11 +1,18 @@
 * {
-  outline: 1px dotted orange;
+  /*outline: 1px dotted orange;*/
   font-family: Source Sans Pro HB, Helvetica Neue ,Helvetica , Arial ,sans-serif, Microsoft Yahei;
+}
+
+li {
+  list-style-type: square;
 }
 
 header h1 {
   text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #000;
 }
 
 .bio_section {
@@ -19,4 +26,22 @@ header h1 {
 .bio_section_content {
   margin-left: 20px;
   margin-top: 0;
+}
+
+#page {
+  max-width: 940px;
+  min-width: 720px;
+  margin: 10px auto 10px auto;
+  padding: 20px;
+  border: 6px solid #000;
+  background-color: #ffffff;}
+
+
+#me_section li {
+  margin: 0px 20px;
+  display: inline;
+}
+
+#me_section li:before {
+  content: "\ffed  ";
 }
